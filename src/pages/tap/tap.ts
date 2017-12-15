@@ -1,12 +1,13 @@
 import { ViewChild, Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-import { TapPage } from '../tap/tap';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
+@IonicPage()
 @Component({
-    selector: 'page-home',
-    templateUrl: 'home.html'
+    selector: 'page-tap',
+    templateUrl: 'tap.html',
 })
-export class HomePage {
+export class TapPage {
     @ViewChild('textarea') ta;
     text:string = "";
     items:any = [];
@@ -26,10 +27,10 @@ export class HomePage {
             }
         }
     }
+
     click(){
+        this.navCtrl.setRoot(HomePage);
     }
     tap(){
-        this.navCtrl.setRoot(TapPage);
     }
-
 }

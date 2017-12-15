@@ -1,14 +1,14 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      キーボード出たまま
+      キーボード閉じる方
     </ion-title>
     <ion-buttons end>
-      <button color="danger" ion-button (tap)="click()">
+      <button ion-button (tap)="click()">
         1
       </button>
-      <button ion-button (tap)="tap()">
-       2 
+      <button color="danger" ion-button (tap)="tap()">
+        2
       </button>
     </ion-buttons>
   </ion-navbar>
@@ -29,7 +29,7 @@
           <ion-textarea #textarea id="ta" [ngModel]="text" (ngModelChange)="text = $event"></ion-textarea>
         </ion-col>
         <ion-col col-2>
-          <button ion-button small class="custom-btn" (click)="submit()">SEND</button>
+          <button ion-button small class="custom-btn" (tap)="submit()">SEND</button>
         </ion-col>
       </ion-row>
     </ion-grid>

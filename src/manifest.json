@@ -1,6 +1,6 @@
 {
-  "name": "Ionic",
-  "short_name": "Ionic",
+  "name": "SubmitTest",
+  "short_name": "SubmitTest",
   "start_url": "index.html",
   "display": "standalone",
   "icons": [{
